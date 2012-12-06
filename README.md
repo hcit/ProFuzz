@@ -1,6 +1,6 @@
 # ProFuzz
 
-Simple PROFINET fuzzer based on {Scapy}(http://www.secdev.org/projects/scapy/)
+Simple PROFINET fuzzer based on Scapy <http://www.secdev.org/projects/scapy/> (2.1.0)
 
 To workaround some problems with Scapy, the file "sendrecv.py" has to be replaced
 with the one in the repository.
