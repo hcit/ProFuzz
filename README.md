@@ -25,7 +25,7 @@ with the one in the repository.
 
 # Project
 
-This project was a student project at the [University of Applied Science Augsburg](http://www.hs-augsburg.de)
+This project was a student project at the [University of Applied Sciences Augsburg](http://www.hs-augsburg.de)
 in SS12.
 
 It allows the fuzzing of some PROFINET frames. The following frames are implemented:
