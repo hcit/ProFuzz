@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Profuzz by HSASec</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Profuzz</h1>
+        <p>Simple PROFINET fuzzer based on Scapy</p>
+
+        <p class="view"><a href="https://github.com/HSASec/ProFuzz">View the Project on GitHub <small>HSASec/ProFuzz</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/HSASec/ProFuzz/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/HSASec/ProFuzz/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/HSASec/ProFuzz">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>ProFuzz</h1>
+
+<p>Simple PROFINET fuzzer based on Scapy <a href="http://www.secdev.org/projects/scapy/">http://www.secdev.org/projects/scapy/</a> (2.1.0)</p>
+
+<p>To workaround some problems with Scapy, the file "sendrecv.py" has to be replaced
+with the one in the repository.</p>
+
+<h2>Dependencies</h2>
+
+<ul>
+<li>tcpdump </li>
+<li>graphviz </li>
+<li>imagemagick </li>
+<li>python-gnuplot </li>
+<li>python-crypto </li>
+<li>python-pyx</li>
+</ul><h1>Authors</h1>
+
+<ul>
+<li>Dmitrijs Solovjovs</li>
+<li>Tobias Leitenmaier</li>
+<li><p>Daniel Mayer</p></li>
+<li><p>Supervisor: <a href="mailto:roland.koch@hs-augsburg.de">roland.koch@hs-augsburg.de</a></p></li>
+</ul><h1>Project</h1>
+
+<p>This project was a student project at the <a href="http://www.hs-augsburg.de">University of Applied Sciences Augsburg</a>
+in SS12.</p>
+
+<p>It allows the fuzzing of some PROFINET frames. The following frames are implemented:</p>
+
+<ul>
+<li>afr (Alarm Frame Random)</li>
+<li>afo (Alarm Frames Ordered)</li>
+<li>pnio (Cyclic RealTime)</li>
+<li>dcp (DCP Identity Requests)</li>
+<li>ptcp (Precision Transparent Clock Protocol - BETA)</li>
+</ul><h2>Example for running the fuzzer</h2>
+
+<p>sudo python Fuzzer.py -w false  -s 00:19:99:9d:ed:ab -d 00:1b:1b:17:ba:8a -t dcp  -i eth2 -c 100</p>
+
+<h3>Explanation</h3>
+
+<ul>
+<li>-s -&gt; Source MAC</li>
+<li>-d -&gt; Destination MAC </li>
+<li>-t one of the scan types mentioned above</li>
+<li>-i, "--interface" -&gt; Interface from which to send. For Example: eth0</li>
+<li>-c, "--count" -&gt; number of Frames to send</li>
+<li>-w,"--sniff" -&gt; use sniffing(true or false) (should be false)</li>
+</ul><h1>Questions</h1>
+
+<p>If you have any other questions, feel free to contact me at <a href="mailto:roland.koch@hs-augsburg.de">roland.koch@hs-augsburg.de</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/HSASec">HSASec</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
